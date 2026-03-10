@@ -1,4 +1,17 @@
-# ABC Pharma – Diabetes Medication Adherence Analytics Platform
+# ABC Pharma – Pharmacy Patient Adherence Risk Prediction System
+
+# Business Context
+
+Retail pharmacies like Walgreens serve millions of patients managing chronic diseases such as diabetes. One of the biggest operational challenges is medication non-adherence, which leads to:
+- poor health outcomes
+- increased healthcare costs
+- lost pharmacy revenue
+
+This project simulates how a retail pharmacy analytics team can use healthcare data and machine learning to:
+- identify patients at risk of medication non-adherence
+- forecast refill gaps
+- quantify revenue at risk
+- prioritize pharmacy interventions
 
 A production-style end-to-end analytics system for analyzing diabetes medication adherence, predicting non-adherence risk, and generating actionable insights for pharmacy operations and patient engagement.
 
@@ -22,7 +35,20 @@ The system includes:
 - Modular architecture
 
 ---
+# 🎯Business Impact 
 
+This analytics system enables pharmacy organizations to:
+- identify high-risk patients before medication gaps occur
+- prioritize pharmacist outreach programs
+- improve medication adherence rates
+- reduce revenue loss from missed refills
+- optimize patient engagement strategies
+
+Potential measurable outcomes:
+- 10–15% improvement in adherence
+- improved patient outcomes
+- millions in recovered pharmacy revenue
+- 
 # 🏗️ Project Structure
 ```
 src/
@@ -37,6 +63,35 @@ reports/
 
 data/
   raw/synthetic/         # Synthetic enterprise data
+```
+```
+Data Sources
+    ↓
+CMS Medicare Part D Data
+Synthetic Patient Dataset
+Pharmacy Store Data
+
+    ↓
+Data Engineering Layer
+Python ETL Pipelines
+Feature Engineering
+
+    ↓
+Analytics Layer
+Adherence Metrics
+PDC / MPR
+Refill Gap Detection
+
+    ↓
+Machine Learning
+Logistic Regression
+Random Forest
+
+    ↓
+Business Insights
+Patient Risk Scores
+Revenue-at-Risk Analysis
+Dashboard Reporting
 ```
 
 ---
@@ -73,17 +128,6 @@ Model evaluation outputs include:
 - **Classification Report**
 - **Positive Rate**
 - **Feature Table Shape**
-
----
-
-# 🎯 Project Purpose
-
-This platform demonstrates how a pharmacy analytics team can:
-
-- Measure medication adherence at scale
-- Detect high-risk non-adherent patients
-- Generate operational insights for pharmacy interventions
-- Support data-driven patient engagement strategies
 
 ---
 
